@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
-var Game = require('/Users/user/Mouni/public/Game.js');
+var Game = require(__dirname+'/Game.js');
 
 var clients = [];
 var cntr = 0;

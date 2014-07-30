@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mouni.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="player_num"></div>
+    <table id="tictactoe">
+        <tr>
+            <td id="c0" name="cell"></td>
+            <td id="c1" name="cell"></td>
+            <td id="c2" name="cell"></td>
+        </tr>
+        <tr>
+            <td id="c3" name="cell"></td>
+            <td id="c4" name="cell"></td>
+            <td id="c5" name="cell"></td>
+        </tr>
+        <tr>
+            <td id="c6" name="cell"></td>
+            <td id="c7" name="cell"></td>
+            <td id="c8" name="cell"></td>
+        </tr>
+    </table>
+    <div id="display-msg">Please wait for the other player to join</div>
+
+  
+    <script src = "/socket.io/socket.io.js"></script>
+    <script src = "http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+</body>
+</html>
