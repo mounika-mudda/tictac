@@ -79,13 +79,23 @@ socket.on('gameover',function(amsg2){
 
 socket.on('play-again',function(player){
   element("display-msg").innerHTML = "Player " + player + " won";
-   var y =confirm("Player " + player + " won...Do you want to play again?");
-   if( y == true)
-    {
-        location.reload(true);
-    }
+  playAgain();
 }); 
 
+function playAgain()
+{
+    var playagn_btn = document.createElement("button");
+    var text = document.createTextNode("Play again");
+    playagn_btn.appendChild(text);
+    playagn_btn.setAttribute('id','playAgain_btn');
+    element('display-msg').appendChild(playagn_btn);
+    element('playAgain_btn').addEventListener('click',reload);
+}
+
+function reload()
+{
+    location.reload();
+}
 
 
 
